@@ -5,7 +5,7 @@ from sqlalchemy import (
 from sqlalchemy.orm import (sessionmaker, declarative_base)
 
 engine = create_engine(
-    "postgresql://postgres:1234@localhost/inventario"
+    "postgresql://postgres:1234@localhost/Inventario"
 )
 
 Base = declarative_base()
@@ -27,7 +27,7 @@ class Proveedores(Base):
     nombre = Column(String)
     telefono = Column(String)
 
-class Movimientos_stock(Base):
+class Movimientos_Stock(Base):
 
     __tablename__ = "movimientos_stock"
 
